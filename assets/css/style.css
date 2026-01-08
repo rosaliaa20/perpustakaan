@@ -1,0 +1,449 @@
+:root {
+  --primary: #4f46e5;
+  --secondary: #f59e0b;
+  --success: #10b981;
+  --danger: #ef4444;
+  --bg: #f1f5f9;
+  --dark: #1e293b;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #1e293b;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  min-height: 100vh;
+}
+
+.bg-soft {
+  background: #f1f5f9;
+  min-height: 100vh;
+}
+
+/* ===== PUBLIC ===== */
+.public-header {
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+}
+
+.public-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.public-card {
+  background: white;
+  width: 420px;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-big {
+  width: 120px;
+  margin: 20px 0;
+}
+
+.input-rfid {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.kategori-grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.kategori-row {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-kat {
+  flex: 1;
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-kat:hover {
+  background: var(--secondary);
+  color: white;
+  border-color: var(--secondary);
+}
+
+/* ===== DASHBOARD ===== */
+/* Update CSS untuk Navigasi Profesional */
+
+.dash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 40px; /* Lebih ramping */
+  border-radius: 0;
+  border-bottom: 1px solid #e2e8f0; /* Garis tipis alih-alih shadow tebal */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.badge-library {
+  font-size: 12px;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.dash-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #64748b; /* Warna abu-abu profesional */
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.nav-icon {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  background: #f8fafc;
+  color: var(--primary);
+}
+
+/* Active State */
+.nav-link.active {
+  background: rgba(79, 70, 229, 0.1);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Divider antara Navigasi dan Logout */
+.nav-divider {
+  width: 1px;
+  height: 24px;
+  background: #e2e8f0;
+  margin: 0 10px;
+}
+
+/* Logout Button Modern */
+.nav-link.logout {
+  color: #ef4444;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.nav-link.logout:hover {
+  background: #fef2f2;
+  border-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Perbaikan Tabel agar lebih profesional */
+table {
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th {
+  background: #f8fafc;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+td {
+  color: #334155;
+  font-size: 13px;
+}
+
+tr:hover td {
+  background: #fcfcfd;
+}
+
+.dash-user a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.stat-card {
+  padding: 25px;
+  border-radius: 16px;
+  color: white;
+}
+.stat-card h1 {
+  margin: 10px 0 0;
+  font-size: 36px;
+}
+
+.stat-card.blue {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+}
+.stat-card.green {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.filter-box {
+  padding: 0 20px 20px;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.card.full {
+  grid-column: 1 / -1;
+  margin: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px 22px; /* lebih ramping */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(30, 60, 255, 0.15);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+th,
+td {
+  padding: 10px 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.export-form {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.export-form select,
+.export-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.btn-success {
+  background: var(--success);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--secondary);
+}
+.text-danger {
+  color: var(--danger);
+}
+
+/* --- Survey Dashboard Specific Styles --- */
+
+.survey-card {
+  max-width: 700px;
+  width: 100%;
+  padding: 50px !important;
+}
+
+.survey-header h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.survey-header p {
+  color: #64748b;
+  margin-bottom: 40px;
+}
+
+/* Sembunyikan Input Radio Asli */
+.emoji-item input {
+  position: absolute;
+  opacity: 0;
+}
+
+.emoji-selector {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.emoji-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  border: 2px solid #f1f5f9;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100px;
+}
+
+.emoji-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  filter: grayscale(100%); /* Warna abu-abu saat belum dipilih */
+  transition: 0.3s;
+}
+
+.emoji-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #94a3b8;
+}
+
+/* Hover Effect */
+.emoji-item:hover .emoji-content {
+  background: #f8fafc;
+  border-color: var(--primary);
+}
+
+.emoji-item:hover .emoji-icon {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+}
+
+/* Style Saat Dipilih (Checked) */
+.emoji-item input:checked + .emoji-content {
+  background: rgba(79, 70, 229, 0.05);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+.emoji-item input:checked + .emoji-content .emoji-icon {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+}
+
+.emoji-item input:checked + .emoji-content .emoji-label {
+  color: var(--primary);
+}
+
+/* Button & Success Message */
+.btn-large {
+  padding: 15px 40px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.success-message {
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.success-icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #cbd5e1;
+  color: #64748b;
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.4);
+  filter: brightness(1.1);
+}
+
